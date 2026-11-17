@@ -1,5 +1,10 @@
 package com.jiashn.generateReport.service;
 
+import com.jiashn.generateReport.domain.ReportConfig;
+
+import java.util.List;
+import java.util.Map;
+
 /**
  * @author: jiangjs
  * @description:
@@ -7,4 +12,14 @@ package com.jiashn.generateReport.service;
  **/
 public interface ApachePoitlService {
     void generateCharts();
+
+    byte[] generateReportBytes();
+
+    ReportConfig getDefaultConfig();
+
+    byte[] generateReportBytes(ReportConfig config);
+
+    byte[] getDefaultTemplate();
+
+    List<Map<String, String>> getPlaceholders();
 }

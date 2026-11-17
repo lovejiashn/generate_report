@@ -1,0 +1,130 @@
+- generic [ref=f1e3]:
+  - banner [ref=f1e4]:
+    - generic [ref=f1e5]:
+      - generic [ref=f1e6]: W
+      - generic [ref=f1e7]:
+        - strong [ref=f1e8]: Word 报表生成中心
+        - generic [ref=f1e9]: 基于 poi-tl 模板引擎
+    - generic [ref=f1e10]: 服务运行中 · :8090
+  - main [ref=f1e12]:
+    - generic [ref=f1e14]:
+      - paragraph [ref=f1e15]: REPORT CONFIGURATOR
+      - heading "配置内容，实时生成 Word 报表" [level=1] [ref=f1e16]
+      - paragraph [ref=f1e17]: 所有模板内容均可配置，也可直接编辑 JSON 重新渲染。
+    - generic [ref=f1e18]:
+      - generic [ref=f1e19]:
+        - generic [ref=f1e21]:
+          - heading "文件预览" [level=2] [ref=f1e22]
+          - paragraph [ref=f1e23]: 实时渲染按当前配置生成的 Word 文档
+        - generic [ref=f1e25]:
+          - heading "图表预览" [level=3] [ref=f1e27]
+          - generic [ref=f1e28]:
+            - generic [ref=f1e29]: speedLine
+            - generic [ref=f1e34]: investmentRatio
+            - generic [ref=f1e39]: areaShow
+            - generic [ref=f1e44]: cycleRadio
+            - generic [ref=f1e49]: openCondition
+      - complementary [ref=f1e54]:
+        - generic [ref=f1e55]:
+          - generic [ref=f1e56]:
+            - button "表单配置" [ref=f1e57] [cursor=pointer]
+            - button "JSON 配置" [ref=f1e58] [cursor=pointer]
+            - button "默认模板" [ref=f1e59] [cursor=pointer]
+          - generic [ref=f1e60]:
+            - generic [ref=f1e61]:
+              - generic [ref=f1e62]: 标题文本
+              - generic [ref=f1e63]:
+                - generic [ref=f1e64]: 标题内容
+                - textbox "标题内容" [ref=f1e65]: 2022年月通报函生成报告
+            - generic [ref=f1e66]:
+              - generic [ref=f1e67]: 带样式文本
+              - generic [ref=f1e68]:
+                - generic [ref=f1e69]: 颜色（16进制）
+                - textbox "颜色（16进制）" [ref=f1e70]:
+                  - /placeholder: cc0000
+                  - text: cc0000
+              - generic [ref=f1e71]:
+                - generic [ref=f1e72]: 文本内容
+                - textbox "文本内容" [ref=f1e73]: 这是带样式的内容
+            - generic [ref=f1e74]:
+              - generic [ref=f1e75]: 图片
+              - generic [ref=f1e76]:
+                - generic [ref=f1e77]:
+                  - generic [ref=f1e78]: 宽度
+                  - spinbutton "宽度" [ref=f1e79]: "200"
+                - generic [ref=f1e80]:
+                  - generic [ref=f1e81]: 高度
+                  - spinbutton "高度" [ref=f1e82]: "160"
+              - generic [ref=f1e83]:
+                - generic [ref=f1e84]: 图片文字
+                - textbox "图片文字" [ref=f1e85]: generate_report
+              - generic [ref=f1e86]:
+                - generic [ref=f1e87]: 图片 URL（可选，填写则使用网络图片）
+                - textbox "图片 URL（可选，填写则使用网络图片）" [ref=f1e88]:
+                  - /placeholder: 留空则生成示例图
+            - generic [ref=f1e89]:
+              - generic [ref=f1e90]: 表格
+              - generic [ref=f1e91]:
+                - generic [ref=f1e92]:
+                  - textbox [ref=f1e93]: 班级
+                  - textbox [ref=f1e94]: 排名
+                  - button "+ 列" [ref=f1e95] [cursor=pointer]
+                - generic [ref=f1e96]:
+                  - textbox [ref=f1e97]: 科教1班
+                  - textbox [ref=f1e98]: "1"
+                  - button "×" [ref=f1e99] [cursor=pointer]
+                - generic [ref=f1e100]:
+                  - textbox [ref=f1e101]: 幼儿3班
+                  - textbox [ref=f1e102]: "6"
+                  - button "×" [ref=f1e103] [cursor=pointer]
+                - generic [ref=f1e104]:
+                  - button "+ 行" [ref=f1e105] [cursor=pointer]
+                  - button "- 列" [ref=f1e106] [cursor=pointer]
+            - generic [ref=f1e107]:
+              - generic [ref=f1e108]: 列表
+              - generic [ref=f1e109]:
+                - generic [ref=f1e110]: 编号样式
+                - combobox "编号样式" [ref=f1e111]:
+                  - option "小写罗马 (i, ii)" [selected]
+                  - option "大写罗马 (I, II)"
+                  - option "数字 (1, 2)"
+                  - option "小写字母 (a, b)"
+                  - option "大写字母 (A, B)"
+                  - option "项目符号"
+              - generic [ref=f1e112]:
+                - textbox [ref=f1e113]: 排序1
+                - button "×" [ref=f1e114] [cursor=pointer]
+              - generic [ref=f1e115]:
+                - textbox [ref=f1e116]: 排序2
+                - button "×" [ref=f1e117] [cursor=pointer]
+              - generic [ref=f1e118]:
+                - textbox [ref=f1e119]: 排序3
+                - button "×" [ref=f1e120] [cursor=pointer]
+              - button "+ 列表项" [ref=f1e121] [cursor=pointer]
+            - generic [ref=f1e122]:
+              - generic [ref=f1e123]: 图表（5 组）
+              - generic [ref=f1e125] [cursor=pointer]:
+                - strong [ref=f1e126]: 1-10月份全国新开工项目数量、投资额增速
+                - generic [ref=f1e127]: speedLine
+                - generic [ref=f1e128]: +
+              - generic [ref=f1e130] [cursor=pointer]:
+                - strong [ref=f1e131]: 各省（自治区）直辖市新开项目数量、投资额同比情况
+                - generic [ref=f1e132]: investmentRatio
+                - generic [ref=f1e133]: +
+              - generic [ref=f1e135] [cursor=pointer]:
+                - strong [ref=f1e136]: 国家投资额
+                - generic [ref=f1e137]: areaShow
+                - generic [ref=f1e138]: +
+              - generic [ref=f1e140] [cursor=pointer]:
+                - strong [ref=f1e141]: 工程建设项目建设周期同比情况
+                - generic [ref=f1e142]: cycleRadio
+                - generic [ref=f1e143]: +
+              - generic [ref=f1e145] [cursor=pointer]:
+                - strong [ref=f1e146]: 各省（区、市）签约项目开工情况
+                - generic [ref=f1e147]: openCondition
+                - generic [ref=f1e148]: +
+            - generic [ref=f1e149]:
+              - button "应用配置并重新渲染" [ref=f1e150] [cursor=pointer]
+              - button "恢复默认配置" [ref=f1e151] [cursor=pointer]
+              - button "下载当前 Word" [ref=f1e152] [cursor=pointer]
+  - contentinfo [ref=f1e153]: Vue 3 + Vite 前端 · Spring Boot + poi-tl 后端
